@@ -1,0 +1,183 @@
+body {
+
+  display: flex;
+  background: linear-gradient(to bottom,#333, #100C08) repeat;
+  background-size: cover;
+  font-family: 'PT Sans', sans-serif;
+  margin: 0px;
+}
+
+.intro {
+  width: 30%;
+  margin-right: 20px;
+}
+
+.emotions-div {
+
+}
+
+.side-splash {
+  width: 5px;
+  height: 100%;
+  background: -webkit-linear-gradient(90deg,rgb(132, 0, 194),teal,#ffa500,rgb(255, 65, 65));
+  margin: 0px !important;
+}
+
+p {
+  padding: 1rem;
+  color: lightgray;
+}
+.h1{
+  background:black;
+}
+h1 {
+  background: -webkit-linear-gradient(0deg,rgb(132, 0, 194),teal,#ffa500,rgb(255, 65, 65),white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  padding: 1rem;
+} 
+h2, h3 {
+  color: #fff;
+   text-shadow:
+    0 0 5px #fff,
+    0 0 11px teal,
+    0 0 21px #0fa;
+    
+  background: black;
+  padding: 1rem;
+  border-radius: 42px;
+  box-shadow: -2px 1px 10px white;
+}
+
+label {
+  color: lightgray;
+  padding: 0px 10px 0px 10px;
+}
+
+div {
+  margin: 1rem;
+}
+
+form {
+  background: linear-gradient(to bottom, #100C08,#333);
+  padding: 20px;
+}
+
+.pos {
+  background-image: linear-gradient(to right, black,#ffa500);
+}
+.neu {
+  background-image: linear-gradient(to right, black, rgb(145, 233, 255));
+}
+.neg {
+  background-image: linear-gradient(to right, black, rgb(255, 65, 65));
+}
+
+button {
+  position: relative;
+  /* bottom: 30px;
+  right: 175px; */
+  background: black;
+  font-weight: bold; 
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: .5rem;
+  align-content: right;
+  margin-left: 2rem;
+  box-shadow: 0 0 5px #fff,
+    0 0 11px teal,
+    0 0 21px #0fa;
+}
+.top {
+  
+}
+.bottom {
+
+}
+input[type='number'],
+select, 
+input[type='email'], 
+input[type='text'] {
+  background: black;
+  color: lightgray;
+  box-shadow: -2px 1px 10px 1px white;
+  padding: 5px;
+  margin: 5px;
+}
+
+textarea {
+  width: 60%;
+  height: 40px;
+  margin-left: 2rem;
+  background: black;
+  color: lightgray;
+  box-shadow: -2px 1px 10px 1px white;
+}
+
+
+/*Chrome*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type='range'] {
+      width: 80px;
+      -webkit-appearance: none;
+      background-color: lightgray;
+      border-radius: 5px;
+    }
+    
+    input[type='range']::-webkit-slider-thumb {
+      width: 10px;
+      -webkit-appearance: none;
+      height: 10px;
+      cursor: ew-resize;
+      background: white;
+      border-radius: 4px;
+      
+    }
+
+     input[type='radio']:after {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: #d1d3d1;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+    }
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    /* background-color: #ffa500; */
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio'][id="strong"]:checked:after {
+    background-color: rgb(132, 0, 194);
+}
+input[type='radio'][id="subtle"]:checked:after {
+    background-color: rgb(156, 255, 136);
+}
+input[type='radio'][id="pos"]:checked:after {
+    background-color: #ffa500;
+}
+input[type='radio'][id="neu"]:checked:after {
+    background-color: rgb(145, 233, 255);
+}
+input[type='radio'][id="neg"]:checked:after {
+    background-color: rgb(255, 65, 65);
+}
+
+}

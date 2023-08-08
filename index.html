@@ -1,0 +1,96 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="side-splash"></div>
+  <div class="Intro">
+    <div class="h1">
+      <h1 id="title">Emotion Log </h1>
+    </div>
+    <br>
+    <p id="description">
+      Description here:
+      This project is a Survey form to display skill in responsive web dsign. It should be capable of responding to the
+      viewfinder width of the user's device whether a desktop, tablet, or mobile in both landscape or portrait mode.
+    </p>
+    <p>
+      This form is an emotion log made to help you process your day.
+    </p>
+  </div>
+  <div class="form">
+
+
+
+    <form id="survey-form" action="#0">
+      <h2>Account</h2>
+      <div class="generic">
+        <label id="name-label" class="test" for="name">Name</label>
+        <input placeholder="Admiral Akbar" required type="text" id="name">
+        <label id="email-label" for="email">Email</label>
+        <input placeholder="its@trap.com" required type="email" id="email">
+        <label id="number-label" for="number">Age</label>
+        <input placeholder="1-100" type="number" id="number" min="0" max="100">
+
+        <select id="dropdown" >
+        <option>Select gender</option>
+        <option>Male</option>
+        <option>Female</option>
+      </select>
+      </div>
+      <h2>How are you feeling?</h2>
+      <div class="emotions-div">
+        <div class="top">
+          <div name="" class="">
+            <input id="strong" value="strong" type="radio" name="intensity">
+            <label for="subtle">Strong</label>
+
+            <input id="subtle" value="subtle" type="radio"name="intensity">
+            <label for="subtle">Subtle</label>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="radio-group" name="radio">
+            <input name="direction" value="good" id="pos" type="radio"><label for="pos">Positive</label>
+
+            <input name="direction" value="bad" id="neg" type="radio"><label for="neg">Negative</label>
+            <input name="direction" value="ok" id="neu" type="radio">
+            <label for="neu">Neutral</label>
+          </div>
+        </div>
+
+
+
+        <div name="positive" class="positive">
+          <input class="pos" type="range">
+        </div>
+
+        <div name="neutral" class="neutral">
+          <input class="neu" type="range">
+        </div>
+
+        <div name="negative" class="negative">
+          <input class="neg" type="range">
+        </div>
+
+      </div>
+
+      <input id="check1" type="checkbox" value="A">
+      <label for="check1">A</label>
+      <input id="check2" type="checkbox" value="B">
+      <label for="check2">B</label>
+
+      <h3>What emotions or personality traits do you desire to show right now?</h3>
+      <textarea placeholder="Well..."></textarea>
+      <button id="submit" type="submit">Submit</button>
+
+    </form>
+  </div>
+
+</body>
+<footer>
+</footer>
+
+</html>
